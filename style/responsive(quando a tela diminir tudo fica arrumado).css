@@ -1,0 +1,19 @@
+@media screen and (max-width:700px){   /* media query*/ /*significa : sempre qua a tela tiver até 700 px aplique essa configuração abaixo*/
+    header .container{
+    display: flex;
+    flex-direction: column;   /*vai ficar um abaixo do outro quando diminir a tela*/
+    }
+
+    .botao{         
+        margin-top: 5px;      /*ajustar a distancia de um botão do outro*/
+        width: 300px;      /*ajustar o tamanaho da caixa do botao*/
+        
+    }
+
+}
+
+@media screen and (min-width:1000px){
+    .descricao{
+        width: 50%;       /* o texto fica concentrado da esquerda*/
+    }
+}

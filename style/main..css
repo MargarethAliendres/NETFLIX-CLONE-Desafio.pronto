@@ -1,0 +1,117 @@
+
+:root{            /*declara variaveis se precisar trocar só troca aqui em um unico lugar */
+  /*variaveis na raiz  quando alterar aqui mudo  todo lugar*/
+   --vermelho: #E50914;
+   --preto: #141414;
+
+}
+
+
+*{     /*reseta as configurações de todo od documento html*/
+   margin: 0;
+   padding: 0%;
+   box-sizing: border-box;
+  
+   /* elementos base */
+}
+body { 
+   background: var(--preto);
+   font-family: 'Arial', Times, serif;
+   color: white;
+}
+header .container{ 
+   display: flex;   /* o que está na caixa fica em linha, e nao columa*/
+   flex-direction: row;  
+   align-items: center;  /* alinha na verTical*/
+   justify-content: space-between; /*justifica na horizontal e da espaçoa entre netflix e os indices*/
+
+}
+
+
+header  .logo {
+   margin-left:5px;
+   color: var(--vermelho);
+   font-family: 'arial', times;
+   font-size: 40px;
+  }
+
+header nav a {      /*icones de navegação*/
+   text-decoration: none;
+   color: #aaa;
+   margin-right:10px;
+}
+
+header nav a:hover{ /* hover quando passar o mouse por cima dos icones muda de cer*/
+   color: #fff;
+}
+
+/* filme principal */
+
+.filme-principal{
+   font-size:16px;
+  background:linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), /* coloca uma camanda fina transparente encima da imagem principal*/ 
+   url('../img/Margarerth.jpg'); /* imagem principal*/
+   
+   height:400px;
+   background-size: cover; /* cobrir a area da caixa toda */
+   
+   display: flex;   
+   flex-direction: column;  /* vertical refere da esquerda para a direita, sempre inverte de acordo com o flex direction*/
+   justify-content:center;  /* esse segue sempre a direção do flex direction*/
+   align-items: flex-start;  /*comecem da esquerda para a direita*/
+}
+.filme-principal .descricao{
+   margin-top: 10px;
+   margin-bottom: 40px;
+ 
+}
+.filme-principal .titulo{
+   margin-top: 5%;
+   font-size: 40px;
+   font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+.botao{         /*rgba/*vermelho, verde, azul, camada alfa 50%*/   /*efeito de transparencia*/
+   background-color: rgba(0,0,0,.50); /*efeito de transparencia*/
+   border: none;  /*tirar calor padrao da borda*/
+   color: white;
+   padding: 15px 30px;   
+   margin-right: 15px;
+   font-size: 12px;
+
+   cursor:pointer; /*muda o mouse para ponteiro quando passar encima do botap*/
+   transition: .5s ease all;   /*dá uma suavizada na transição das cores do botão*/
+} 
+.botao:hover{   /* quando passar o mouse encima muda de cor*/
+   background-color: white;  /* quando passar o mouse encima muda de cor*/
+   color: black;   /* quando passar o mouse encima muda de cor*/
+}
+.botao i{
+   margin-right: 8px;
+}
+
+
+/*wrapper - evelopar - envelope */  /*monipula muita coisa só movimentando a caixa*/ /*container manipula varios filhos juntos*/
+
+.container{
+      margin-left: 20px;
+      margin-right: 10px;
+      
+}
+
+.filme-principal .container{
+   width: 70%;
+}
+
+
+.box-filme {
+   height: 100%;
+   width: 100%;
+   display: block;
+   cursor: pointer;
+}
+
+.carrosel-filme{
+   margin-top: 5px;
+
+}
+
